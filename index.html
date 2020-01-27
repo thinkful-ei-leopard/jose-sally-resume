@@ -19,12 +19,38 @@
 
 
 
-  <script
-    src="https://unpkg.com/react@16/umd/react.development.js">
-  </script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
  <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-  </script>
-  <script src="app.js" type="text/babel"></script>
-  </body>
+<script type="text/babel">
+
+function App() {
+    return (
+      <main>
+        <header>
+        <h1> Hi, I'm Sally! </h1>
+        <h3> Here's a little information about me. </h3>
+        </header>
+
+        <address> Name: Sally Henderson
+        You may e-mail me at <a href="mailto:webmaster@somedomain.com" target="_blank"> contact Sally</a>
+        Or contact me via text or call at: 1(773)123-1122
+        <img src="https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="A portrait of myself!" />
+        </address>
+
+
+      <section>
+      <h3 className="edu">Education</h3>
+      <p>Secondary Education: Bloom High School
+      College: University of Illinois at Chicago</p>
+      </section>
+
+    </main>
+          );
+}
+
+const appRoot = document.querySelector('#application-root');
+ReactDOM.render(<App />, appRoot);
+</script>
+</body>
 </html>
