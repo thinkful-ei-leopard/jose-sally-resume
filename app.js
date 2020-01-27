@@ -1,7 +1,18 @@
 const appRoot = document.querySelector('#application-root');
 
-ReactDOM.render('Hello, world!', appRoot);
+ReactDOM.render(<App />, appRoot);
 
 
-
-// const helloWorldH1 = <h1>Hello, world!</h1>;
+function App() {
+    return  (
+        <div>
+          <h1>Hello, everyone!</h1>
+          <p>We think</p>
+          <ul>
+            <li>React</li>
+            <li>is</li>
+            <li>brilliant!</li>
+          </ul>
+        </div>
+      );
+}
